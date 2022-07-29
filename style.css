@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: hsl(0, 0%, 100%);
+    --secondbg-color:hsl(240, 9%, 89%);
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Height: 72.0rem;
+    gap: 19.2rem;
+}
+
+#timer {
+    font-size: 12.6rem;
+    display: flex;
+    margin-bottom: 3.8rem;
+    height: 11.7rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.tree, 
+.house, 
+.fire,
+.rain {
+    background-color: var(--secondbg-color);
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    display: flex;
+}
+
+.tree > svg, 
+.house> svg,
+.fire > svg,
+.rain > svg {
+    display: block;
+     margin: auto;
+     width: 5.6rem;
+     height: 5.6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30.8rem;
+    height: 36.6em;
+}
+
+#controls {
+    display: flex;
+    gap: 4.0rem;
+}
+
+.selected {
+    background-color: #02799D;
+}
+
+.selected > svg > path {
+    fill: white;
+}
+
+.clicar > svg > path {
+    fill:red
+}
